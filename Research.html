@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Research</title>
+</head>
+<body>
+
+	<h2><a href="/">Home</a></h2>
+       	<h3>Research</h3>
+
+My research interests are on the modeling, optimization and control of networked cyber-physical systems. 
+Specifically, I would like to understand the structral properties of the control and optimization in power systems,
+and to use such structral properties to guide the designing of new algorithms.
+Here are some core questions I pose to myself.
+
+<section>
+	<h4>&#8226 What is the effect of power demand on the optimal generation allocation in power systems?</h1>
+	The sensitivity of the generation w.r.t. the load reflects how power demand affects the optimal generation in economic dispatch problems.
+	We found that low sensitivity helps preserve the differential privacy of power system data, 
+	and decreases the tracking error of real-time primal dual algorithm.
+	The sensitivity is closely related to the topology of power network.
+	We proposed an algorithm to compute the worst-case sensitivity for certain network topologies, 
+	and showed that the computation for larger networks can be decomposed into the abalysis on smaller network components.
+	Please check our <a href="/ACC2020_final.mp4">video</a> for ACC2020, which demonstrates this decomposition procedure.
+</section>
+
+<section>
+	<h4>&#8226 How to extend the convex relaxation to distributed power systems with multi-phases, in the presence of both Y and &#916 devices?</h1>
+	Optimal Power Flow (OPF) problems are non-convex, and NP-hard in genral. 
+	For single-phase networks, it was known that convex relaxation is usually exact in both theory and practice, under certain conditions.
+	However, there was little analytical work on the exactness for multi-phase networks and even in practice, 
+	the relaxation method was restrictive to networks with Y devices only.
+	We first propose the sufficient conditions, though still restrictive in many ways, that provably guarantees the exactness for multi-phase networks.
+	In addition, we also develop new methodologies to relax networks with both Y and &#916 devices.
+	Our new methodologies can efficiently find the global optima for all the IEEE test cases (see <a href="https://arxiv.org/abs/2005.07803">paper</a>).
+</section>
+
+<section>
+	<h4>&#8226 How to characterize some 'easy' non-convex optimization problems?</h1>
+	Beyond problems in power systems, there are tremendous engineering problems that are non-convex and thus NP-hard in general.
+	However, in practice many efficient algorithms are actually able to find the global optima for the majority of problem instances.
+	Those algorithms include convex relaxation and local-search methods such as gradient descent. 
+	In this project, we exact some common features of those problems which satisfy both: 
+	(1) convex relaxation is exact; (2) local optima are gloablly optimal.
+	Such common features turn out to be the existence of some potential function satisfying certain conditions.
+	It is very interesting that for many problems including OPF, optimal charging scheduling, SDP with rank constraints, 
+	such potential function can be easily (and naturally) found or constructed.
+	We hope this result can open up a new perspective to characterize some 'easy' non-convex problems.
+
+</section>
+
+</body>
+</html>
