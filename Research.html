@@ -14,6 +14,22 @@ and to use such structral properties to guide the designing of new algorithms.
 Here are some core questions I pose to myself.
 
 <section>
+	<h4>&#8226 How to characterize some 'easy' non-convex optimization problems?</h1>
+	Beyond problems in power systems, there are tremendous engineering problems that are non-convex and thus NP-hard in general.
+	However, in practice many efficient algorithms are actually able to find the global optima for the majority of problem instances.
+	Those algorithms include convex relaxation and local-search methods such as gradient descent. 
+	In this project, we extract some common features of those problems which satisfy both: 
+	(1) convex relaxation is exact; (2) local optima are gloablly optimal.
+	Such common features turn out to be the existence of some potential function satisfying certain conditions.
+	It is very interesting that for many problems including OPF, optimal charging scheduling, SDP with rank constraints, 
+	such potential function can be easily (and naturally) found or constructed.
+	We hope this result can open up a new perspective to characterize some 'easy' non-convex problems.
+	See our <a href="/easy_opt.pdf">recent article</a>.
+
+</section>
+
+
+<section>
 	<h4>&#8226 What is the effect of power demand on the optimal generation allocation in power systems?</h1>
 	The sensitivity of the generation w.r.t. the load reflects how power demand affects the optimal generation in economic dispatch problems.
 	We found that low sensitivity helps preserve the differential privacy of power system data, 
@@ -35,19 +51,6 @@ Here are some core questions I pose to myself.
 	Our new methodologies can efficiently find the global optima for all the IEEE test cases (see <a href="https://arxiv.org/abs/2005.07803">paper</a>).
 </section>
 
-<section>
-	<h4>&#8226 How to characterize some 'easy' non-convex optimization problems?</h1>
-	Beyond problems in power systems, there are tremendous engineering problems that are non-convex and thus NP-hard in general.
-	However, in practice many efficient algorithms are actually able to find the global optima for the majority of problem instances.
-	Those algorithms include convex relaxation and local-search methods such as gradient descent. 
-	In this project, we extract some common features of those problems which satisfy both: 
-	(1) convex relaxation is exact; (2) local optima are gloablly optimal.
-	Such common features turn out to be the existence of some potential function satisfying certain conditions.
-	It is very interesting that for many problems including OPF, optimal charging scheduling, SDP with rank constraints, 
-	such potential function can be easily (and naturally) found or constructed.
-	We hope this result can open up a new perspective to characterize some 'easy' non-convex problems.
-
-</section>
 
 </body>
 </html>
